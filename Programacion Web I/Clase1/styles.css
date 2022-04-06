@@ -1,0 +1,54 @@
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+header{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px;
+}
+
+
+footer{
+    background-color: gray;
+    text-align: center;
+    color: white;
+}
+
+footer a{
+    color: white;
+    font-weight: bold;
+}
+
+.banner{
+    width: 100%;
+    height: 300px;
+    background-color: beige;
+    background-image: url('https://technotronixs.com/assets/front/img/summernote/61be16afc2df9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tech-container{
+    display: flex;
+    padding: 40px,16px;
+}
+
+.tech-item{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 16px;  
+}
