@@ -5,7 +5,7 @@
 body{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
     height: 100vh;
 }
 
@@ -31,7 +31,7 @@ footer a{
 
 .banner{
     width: 100%;
-    height: 300px;
+    height: 340px;
     background-color: beige;
     background-image: url('https://technotronixs.com/assets/front/img/summernote/61be16afc2df9.jpg');
     background-repeat: no-repeat;
@@ -41,7 +41,9 @@ footer a{
 
 .tech-container{
     display: flex;
+    justify-content: space-evenly;
     padding: 40px,16px;
+    flex-wrap: wrap;
 }
 
 .tech-item{
@@ -50,5 +52,18 @@ footer a{
     background-color: orange;
     text-align: center;
     line-height: 200px;
-    border-radius: 16px;  
+    border-radius: 16px;
+    margin-bottom: 16px;
+    margin: 10px;
+}
+
+@media (max-width: 576px){
+    body{
+        background-color: green;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+    body{
+        background-color: yellow;
+    }
 }
