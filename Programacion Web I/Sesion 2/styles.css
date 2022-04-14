@@ -1,0 +1,11 @@
+.tech-container{
+    justify-content: space-evenly;
+    padding: 40px,16px;
+}
+
+.tech-item{
+    height: 200px;
+    background-color: orange;
+    text-align: center;
+    line-height: 200px;
+}
