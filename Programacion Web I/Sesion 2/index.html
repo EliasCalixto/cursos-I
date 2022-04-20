@@ -10,30 +10,85 @@
 </head>
 
 <body>
-    <main class="container" style="background-color:cornflowerblue">
-        <h1>Bienvenido a Bootstrap</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure rerum quisquam rem sit suscipit exercitationem quidem, officia laborum? Alias sequi praesentium, et reprehenderit voluptatum deserunt sunt adipisci delectus fugit!</p>
-        <div class="tech-container row">
-            <div class="tech-item col-12 col-md-6 col-lg-3 m-0 m-md-3">
-                <span>HTML</span>
+    <main class="container p-0" style="background-color:cornflowerblue">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="nav-logo"src="/img/pokemon_center_logo.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="p-3">
+            <div class="d-none d-md-flex justify-content-center align-items-center mt-4">
+                <img class="title-logo me-2" src="/img/logo-square.png" alt="logo">
+                <h1 class="text-center">Centro Pokemon</h1>
             </div>
-            <div class="tech-item col-12 col-md-6 col-lg-3 m-0 m-md-3">
-                <span>CSS</span>
+            <p class="text-justify px-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure rerum quisquam rem sit suscipit exercitationem quidem, officia laborum? Alias sequi praesentium, et reprehenderit voluptatum deserunt sunt adipisci delectus fugit!</p>
+            <h2 class="ms-md-3">Servicios</h2>
+            <div class="service-container row d-flex justify-content-center my-4">
+                <div class="service-item col-12 col-md-10 col-lg-5 me-lg-4 mb-lg-4 p-0">
+                    <div class="serv-bg serv-pokedex"></div>
+                    <h3 class="serv-title">Pokedex</h3>
+                </div>
+                <div class="service-item col-12 col-md-10 col-lg-5 my-4 my-lg-0 p-0">
+                    <div class="serv-bg serv-date"></div>
+                    <h3 class="serv-title">Citas</h3>
+                </div>
+                <div class="service-item col-12 col-md-10 col-lg-5 mb-4 me-lg-4 p-0">
+                    <div class="serv-bg serv-urgency"></div>
+                    <h3 class="serv-title">Urgencias</h3>
+                </div>
+                <div class="service-item col-12 col-md-10 col-lg-5 p-0">
+                    <div class="serv-bg serv-emergency"></div>
+                    <h3 class="serv-title">Emergencias</h3>
+                </div>
             </div>
-            <div class="tech-item col-12 col-md-6 col-lg-3 m-0 m-md-3">
-                <span>Javascript</span>
+        </section>
+        <footer class="mb-4">
+            <div class="row">
+                <div class="col-12 col-md-6 text-center">
+                    <p><b>Centro Pokemon Peru 2022 <a href="#">Todos los derechos reservados</a></b></p>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center align-content-center">
+                    <div class="social-networks">
+                        <img src="/img/tiktok.svg" alt="TikTok">
+                        <img src="/img/instagram.svg" alt="Instagram">
+                        <img src="/img/facebook.svg" alt="Facebook">
+                    </div>
+                </div>
             </div>
-            <div class="tech-item col-12 col-md-6 col-lg-3 m-0 m-md-3">
-                <span>Angular</span>
-            </div>
-            <div class="tech-item col-12 col-md-6 col-lg-3 m-0 m-md-3">
-                <span>React</hspan3>
-            </div>
-            <div class="tech-item col-12 col-md-6 col-lg-3 m-0 m-md-3">    
-                <span>Node</span>
-            </div>
-
-        </div>
+        </footer>
     </main>
 </body>
 </html>
