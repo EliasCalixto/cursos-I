@@ -1,0 +1,37 @@
+.cont{
+    background-color: #f3f1fc;
+}
+
+.dark{
+    background-color: rgb(17, 17, 17);
+}
+
+.btnn{
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.radi{
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+@media (min-width: 0px) and (max-width: 260px){
+    h1{
+        text-align: center;
+    }
+}
+
+@media (min-width: 261px) and (max-width: 575px){
+    h1{
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    h1{
+        text-align: center;
+    }
+}
+
