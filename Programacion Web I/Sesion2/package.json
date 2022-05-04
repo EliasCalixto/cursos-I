@@ -1,0 +1,28 @@
+{
+  "name": "sesion2",
+  "version": "1.0.0",
+  "description": "Proyecto Programacion Web I.",
+  "main": "indes.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/isil-pweb1-2022-1/class-bootstrap.git"
+  },
+  "keywords": [
+    "dom",
+    "javascript",
+    "jquery",
+    "nodejs"
+  ],
+  "author": "Elias Calixto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/isil-pweb1-2022-1/class-bootstrap/issues"
+  },
+  "homepage": "https://gitlab.com/isil-pweb1-2022-1/class-bootstrap#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
