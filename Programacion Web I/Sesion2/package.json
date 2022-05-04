@@ -1,8 +1,8 @@
 {
-  "name": "sesion2",
+  "name": "frontend-web-1",
   "version": "1.0.0",
-  "description": "Proyecto Programacion Web I.",
-  "main": "indes.html",
+  "description": "Proyecto correspondiente a la primera parte del curso de Programción Web I.",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,9 +14,11 @@
     "dom",
     "javascript",
     "jquery",
-    "nodejs"
+    "bootstrap",
+    "html",
+    "css"
   ],
-  "author": "Elias Calixto",
+  "author": "Luis Becerra",
   "license": "ISC",
   "bugs": {
     "url": "https://gitlab.com/isil-pweb1-2022-1/class-bootstrap/issues"
