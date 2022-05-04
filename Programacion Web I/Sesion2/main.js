@@ -1,3 +1,3 @@
-const {JSDOM} = require( "jsdom");
-const {window} = new JSDOM( "" );
-const $ = require( "jquery" )( window );
+const sectionTest = $('$#test');
+console.log(sectionTest);
+

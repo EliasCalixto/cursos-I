@@ -23,6 +23,7 @@
   },
   "homepage": "https://gitlab.com/isil-pweb1-2022-1/class-bootstrap#readme",
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "jsdom": "^19.0.0"
   }
 }
