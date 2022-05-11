@@ -63,6 +63,16 @@ function onDocumentLoaded(){
 
     sectionTest.appendChild(listTeams);
 
+    const voltorb = document.createElement('img');
+    voltorb.src = 'https://www.pngplay.com/wp-content/uploads/12/Voltorb-Pokemon-PNG-Clipart-Background.png';
+    voltorb.style.height = '60px';
+    document.body.appendChild(voltorb);
+
+    document.addEventListener('mousemove', function(event){
+        voltorb.style.position = 'absolute';
+        voltorb.style.left = event.pageX + 'px';
+        voltorb.style.top = event.pageY + 'px';
+    })
 }
 
 /*
