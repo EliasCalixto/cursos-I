@@ -156,7 +156,7 @@ function buildElementRow(element){
     const tdImg = document.createElement('td');
     const img = document.createElement('img');
     img.setAttribute('src',element.picture.large);
-    img.classList.add('border')
+    img.classList.add('border','imgTable')
     append(tdImg,img);
     append(tr,tdImg);
 
