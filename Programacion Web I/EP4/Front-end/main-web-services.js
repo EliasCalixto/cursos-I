@@ -16,6 +16,12 @@ const fetchTasks = async () =>{
 }
 
 window.onload = async ()=> {
+    //boton add
+    btn = document.getElementById('btnasd');
+    btn.onclick = function(){
+        prompt('Ingrese la tarea que desea agregar: ')
+    }
+
     try{
         await fetchTasks();
 
