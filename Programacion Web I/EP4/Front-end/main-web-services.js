@@ -16,13 +16,6 @@ const fetchTasks = async () =>{
 }
 
 window.onload = async ()=> {
-    //boton add
-    var btn = document.getElementById('btnasd');
-    btn.onclick = function(){
-        var newTask = prompt('Ingrese la tarea que desea : ')
-        console.log(newTask)
-    }
-
     try{
         await fetchTasks();
 
@@ -50,7 +43,7 @@ window.onload = async ()=> {
             </tr>
             `
         })
-        htmlTable+='</tbody></table>';
+        //htmlTable+='</tbody></table>';
 
         tasksSection.innerHTML = htmlTable;
 
@@ -79,6 +72,33 @@ window.onload = async ()=> {
         htmlTable2+='</tbody></table>';
 
         tasksSection2.innerHTML = htmlTable2;
+
+        //boton add
+        var count = 11
+        var now = new Date();
+        var createdAts = `${now.getDate()}-${now.getMonth()+1}-${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`
+
+        var btn = document.getElementById('btnasd');
+        btn.onclick = function(){
+            var newTask = prompt('Ingrese la tarea que desea agregar: ')
+            console.log(newTask)
+            try{
+                htmlTable +=
+                `<tr>
+                    <td>${count}</td>
+                    <td>${newTask}</td>
+                    <td>${createdAts}</td>
+                    <td><button type=button class=border><img class='check' src='check.png'></button></td>
+                    <td><button type=button class=border>Editar</button></td>
+                    <td><button type=button class=border>Eliminar</button></td>
+                </tr>
+                `
+                count+=1
+                tasksSection.innerHTML = htmlTable;
+            }catch{
+                console.log('nah')
+            }
+        }
     }catch(err){
         console.log(err);
     }
