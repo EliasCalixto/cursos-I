@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(248, 247, 247);
+}
+
+.container-todo{
+    margin: auto;
+    font-size: 14px;
+}
+
+h1{
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(252, 119, 31);
+}
+
+.check{
+    width: 20px;
+}
+
+.btnplus{
+    margin: 0;
+    padding: 0;
+    width: 45px;
+}
+
+.plus{
+    width: 20px;
+    padding-bottom: 10px;
+    
+}
+
+.asd{
+    display: flex;
+    text-align: center;
+}
+
+.a1{
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+}
+
+.a2{
+    width: 45%;
+    float: right;
+}
