@@ -366,4 +366,30 @@ window.onload = () =>{
     div7.appendChild(btn7)
     div8.appendChild(btn8)
     div9.appendChild(btn9)
+
+    var status = 0
+    cesta = () =>{
+        if(status == 0){
+            var rootCesta = document.getElementById('rootCesta')
+            var divCesta = document.createElement('div')
+            var hCesta = document.createElement('h3')
+            hCesta.textContent = 'Cursos en Cesta'
+            divCesta.classList.add('divCesta','border','rounded')
+            rootCesta.appendChild(divCesta)
+            divCesta.appendChild(hCesta)
+            status=1
+
+            cursosOnCesta.forEach(element =>{
+                var divContentCesta = document.createElement('div')
+                divContentCesta.textContent = `*${element.nombre}     ---     S/${element.precio}`
+                divCesta.appendChild(divContentCesta)
+            })
+            
+
+            
+        }else{
+            rootCesta.removeChild(divCesta)
+            status=0
+        }
+    }
 }
